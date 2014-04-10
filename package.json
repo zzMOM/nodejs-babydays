@@ -1,10 +1,26 @@
 {
-  "name": "application-name",
+  "name": "BabyDays",
   "version": "0.0.1",
-  "private": true,
+  "description": "Help to record baby's day routine.",
+  "main": "web.js",
   "scripts": {
     "start": "node ./bin/www"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zzMOM/Nodejs-babydays.git"
+  },
+  "keywords": [
+    "heroku",
+    "node.js",
+    "express"
+  ],
+  "author": "Wei Wu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zzMOM/Nodejs-babydays/issues"
+  },
+  "homepage": "https://github.com/zzMOM/Nodejs-babydays",
   "dependencies": {
     "express": "~3.4.8",
     "static-favicon": "~1.0.0",
@@ -13,5 +29,8 @@
     "body-parser": "~1.0.0",
     "debug": "~0.7.4",
     "jade": "~1.3.0"
+  },
+  "engines": {
+    "node": "0.10.x"
   }
 }
