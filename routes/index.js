@@ -15,8 +15,9 @@ exports.doLogin = function(req, res){
 
   if(req.body.username===user.username && req.body.password===user.password){
     res.redirect('/home');
-  }
+  } else {
     res.redirect('/login');
+  }
 };
 
 exports.logout = function(req, res){
