@@ -11,7 +11,8 @@ var users = require('./routes/user');
 
 var app = express();
 
-// view engine setup
+// all environment
+app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
@@ -32,7 +33,9 @@ app.post('/login', routes.login);
 app.get('/logout', routes.logout);
 app.get('/home', routes.home);
 
-
+http.createServer(app).listen(app.get('port'), function(){
+console.log('Express server listening on port ' + app.get('port'));
+});
 
 
 /// catch 404 and forwarding to error handler
