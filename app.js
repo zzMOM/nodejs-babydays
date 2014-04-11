@@ -26,6 +26,15 @@ app.use(app.router);
 app.get('/', routes.index);
 app.get('/users', users.list);
 
+//add new get for routes
+app.get('/login', routes.login);
+app.post('/login', routes.login);
+app.get('/logout', routes.logout);
+app.get('/home', routes.home);
+
+
+
+
 /// catch 404 and forwarding to error handler
 app.use(function(req, res, next) {
     var err = new Error('Not Found');
