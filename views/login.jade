@@ -2,12 +2,12 @@ extends layout
 
 block content
   .container
-  form.userlogin(action='demo_form_action.asp', method='get')
+  form(name='login', method='post')
     | Username:
     input#username(type='text', name='username')
     br
     | Password:
     input#password(type='password', name='password')
     br
-    input(type='submit', value='Submit')
+    input(type='submit', name='submit', value='Submit')
 

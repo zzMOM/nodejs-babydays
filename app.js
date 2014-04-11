@@ -29,7 +29,7 @@ app.get('/users', users.list);
 
 //add new get for routes
 app.get('/login', routes.login);
-app.post('/login', routes.login);
+app.post('/login', routes.doLogin);
 app.get('/logout', routes.logout);
 app.get('/home', routes.home);
 
